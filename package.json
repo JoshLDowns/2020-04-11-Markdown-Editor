@@ -1,0 +1,25 @@
+{
+  "name": "2020-04-11-Markdown-Editor",
+  "version": "1.0.0",
+  "description": "$25 CAD Amazon gift card + bragging rights.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshLDowns/2020-04-11-Markdown-Editor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoshLDowns/2020-04-11-Markdown-Editor/issues"
+  },
+  "homepage": "https://github.com/JoshLDowns/2020-04-11-Markdown-Editor#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

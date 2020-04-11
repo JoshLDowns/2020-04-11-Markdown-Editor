@@ -1,0 +1,64 @@
+@import '../../node_modules/codemirror/lib/codemirror.css';
+@import '../../node_modules/codemirror/theme/material.css';
+
+#main-container {
+  width: 100%;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.react-codemirror2 {
+  height: 100%;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  height: 5%;
+  width: 96%;
+  padding: 0 2% 0 2%;
+  border-bottom: 3px dashed slategrey;
+}
+
+#header-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+}
+
+#input-output {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+}
+
+#input {
+  margin-top: 1%;
+  width: 45%;
+  height: 95%;
+  padding: 1%;
+  border: 3px solid slategrey;
+}
+
+#output {
+  margin-top: 1%;
+  width: 45%;
+  height: 95%;
+  padding: 1%;
+  border: 3px solid slategrey;
+}
+
+#output p {
+  margin: 1px;
+}
+
+#output h1, h2, h3, h4, h5, h6 {
+  margin: 2px
+}
+
+
