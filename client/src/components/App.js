@@ -18,7 +18,7 @@ class App extends React.Component {
 
     let options = {
       value: '**Welcome to the text editor!**',
-      getValue: { separator: '<br />' },
+      getValue: {separator: '<br />'},
       lineNumbers: true,
       gutter: true,
       linewrapping: true,
@@ -37,14 +37,17 @@ class App extends React.Component {
             <CodeMirror
               value={this.state.value}
               options={options}
+              onBeforeChange={(editor, data, value) => {
+                this.setState({ value });
+              }}
               onChange={(editor, data, value) => {
                 this.setState({ value });
               }}
             />
           </div>
           <div id='output'>
-            <div id='output-scroll'>
-              <Markdown markdown={this.state.value} />
+          <div id='output-scroll'>
+            <Markdown markdown={this.state.value} />
             </div>
           </div>
         </div>
